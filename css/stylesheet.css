@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+
+}
+
+body{
+	font-family: 'Lato', sans-serif;
+	font-size: 0.75em;
+}
+
+header{
+	background-image: url(../img/header.jpg);
+	height: 310px;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	padding-bottom: 10px;
+	max-width: 414px;
+}
+
+.main-nav{
+	position: relative;
+	width: 100%;
+	list-style-type: none;
+	background-color: rgba(141,125,31,0.95);
+	z-index: 2;
+}
+
+.nav-links, .logo{
+	text-decoration: none;
+	color: white;
+}
+
+.main-nav li{
+	text-align: center;
+	margin:  auto;
+	padding: 20px;
+	border-bottom: 0.5px solid;
+	border-color: black;
+
+}
+
+.logo{
+	padding-top: 10px;
+	text-align: center;
+	font-family: 'Courgette', cursive;
+
+}
+
+.navbar-toggle{
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	cursor: pointer;
+	color: white;
+	font-size: 20px;
+}
+
+.main-nav{
+	list-style-type: none;
+	display: none;
+}
+
+.active{
+	display: block;
+}
+
+.social i{
+	font-size: 20px;
+	padding: 0px 10px 0px 10px;
+}
+
+h1{
+	font-size: 16px;
+}
+
+.fa-search{
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	cursor: pointer;
+	color: white;
+	font-size: 20px;
+}
+
+.welkomtekst{
+	width: 260px;
+	padding: 15px;
+	background-color: rgba(141,125,31,0.9);
+	position: absolute;
+	left: 20px;
+	bottom: 35px;
+	z-index: 1;
+	color: white;
+}
+
+.listimg{
+	width: 60px;
+	height: 60px;
+	margin: 20px;
+}
+
+.productrow{
+	display: flex;
+	flex-direction: row;
+	
+	padding: 10px 0;
+	margin-top: 10px;
+}
+
+.producttextcontainer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 300px;
+}
+
+h2{
+	font-size: 14px;
+}
+
+.info{
+	display: flex;
+	flex-direction: row;
+	padding: 10px 0;
+}
+
+iframe{
+	height: 200px;
+	width: 50%;
+}
+
+.openingstijden{
+	height: 200px;
+	width: 50%;
+	background-color: #8D7D1F;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.headeropening{
+	padding: 10px;
+}
+
+.footernav{
+	list-style-type: none;
+}
+
+
+
+.footernav li{
+	text-align: center;
+	margin: 15px auto;
+	border-bottom: 0.5px solid;
+	border-color: black;
+	padding-bottom: 10px;
+	
+}
+
+.foot-links{
+	text-decoration: none;
+	color: black;
+}
+
+.desksocial{
+	display: none;
+}
+
+@media screen and (max-width: 1152px) and (min-width: 1024px){
+	
+	body{
+		font-size: 1em;
+	}
+
+	header{
+		max-width: 1024px;
+		margin-bottom: 20px;
+		background-image: url(../img/headerdesktop.jpg);
+	}
+
+	.navbar-toggle, .main-nav .social{
+		display: none;
+	}
+
+	.main-nav{
+		display: block;
+		text-align: center;
+		padding: 10px 0px 10px 0px;
+		margin-top: 20px;
+		
+	}
+
+	.main-nav li{
+		display: inline;
+		border: none;
+		
+
+	}
+
+	.main-nav a{
+		padding: 10px;
+	}
+
+	.welkomtekst{
+		width: 500px;
+	}
+
+	.productrow{
+		margin:auto;
+		width: 60%;
+	}
+
+	.producttextcontainer{
+		max-width: none;
+	}
+
+	iframe, .openingstijden{
+		height: 500px;
+	}
+
+	.openingstijden{
+		font-size: 
+	}
+}
+
+@media screen and (max-width: 1499px) and (min-width: 1153px){
+
+	.navbar-toggle, .main-nav .social{
+		display: none;
+	}
+
+	.main-nav{
+		display: inline;
+		text-align: center;
+		padding: 10px 0px 10px 0px;
+		margin-top: 20px;
+		
+	}
+
+	.main-nav li{
+		display: inline;
+		border: none;
+		
+
+	}
+
+	.main-nav a{
+		padding: 10px;
+	}
+
+	
+
+	.navbardesk{
+    
+    display: grid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    grid-template-areas: "logo links search";
+    
+    align-items: center;
+    background-color: rgba(141,125,31,0.9);
+
+}
+
+	.logo{
+		display: inline-block;
+		grid-area: logo;
+		padding: 0;
+		justify-self: start;
+		padding-left: 10px;
+	}
+
+	.main-nav{
+		grid-area: links;
+		background-color: transparent;
+		padding: 0;
+		margin: 0;
+	}
+
+	.searchicon{
+		grid-area: search;
+		position: static;
+		padding-right: 10px;
+		text-align: right;
+	}
+
+	header{
+		max-width: 1153px;
+		margin-bottom: 10px;
+		background-image: url(../img/headerdesktop.jpg);
+	}
+
+	main{
+		display: grid;
+		grid-template-areas: 'tekst info'
+	}
+
+	.infotekst{
+		grid-area: tekst;
+		padding-left: 20px;
+		border-right: 0.5px solid;
+	}
+
+	.info{
+		grid-area: info;
+		margin-top: 10px;
+		padding-left: 20px;
+	}
+
+	.openingstijden{
+		background-color: white;
+		color: black;
+	}
+
+	iframe{
+		height: 370px;
+		width: 250px;
+	}
+
+	footer{
+		display: grid;
+		grid-template-areas: 'links social';
+		background-color: rgb(141,125,31);
+
+	}
+
+	.footernav{
+		grid-area: links;
+		padding-left: 20px; 
+		padding-top: 10px;
+		
+	}
+
+	.footernav li{
+		color: white;
+	}
+
+	.desksocial{
+		grid-area: social;
+		color: white;
+		display: block;
+		font-size: 40px;
+		justify-self: center;
+		align-self: center;
+	}
+
+	.footernav .social{
+		display: none;
+	}
+
+	.footernav li{
+		border: none;
+		text-align: left;
+	}
+
+	.foot-links{
+		color: white;
+	}
+
+	.insta, .face{
+		padding: 10px;
+
+	}
+
+
+	}
+
+	@media screen and (min-width: 1500px){
+
+	.navbar-toggle, .main-nav .social{
+		display: none;
+	}
+
+	.main-nav{
+		display: inline;
+		text-align: center;
+		padding: 10px 0px 10px 0px;
+		margin-top: 20px;
+		
+	}
+
+	.main-nav li{
+		display: inline;
+		border: none;
+		
+
+	}
+
+	.main-nav a{
+		padding: 10px;
+	}
+
+	
+
+	.navbardesk{
+    
+    display: grid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    grid-template-areas: "logo links search";
+    
+    align-items: center;
+    background-color: rgba(141,125,31,0.9);
+
+}
+
+	.logo{
+		display: inline-block;
+		grid-area: logo;
+		padding: 0;
+		justify-self: start;
+		padding-left: 10px;
+	}
+
+	.main-nav{
+		grid-area: links;
+		background-color: transparent;
+		padding: 0;
+		margin: 0;
+	}
+
+	.searchicon{
+		grid-area: search;
+		position: static;
+		padding-right: 10px;
+		text-align: right;
+	}
+
+	header{
+		max-width: 1153px;
+		background-image: url(../img/headerdesktop.jpg);
+	}
+
+	main{
+		display: grid;
+		grid-template-areas: 'tekst info';
+		background-color: white;
+	}
+
+	.infotekst{
+		grid-area: tekst;
+		padding-left: 20px;
+		border-right: 0.5px solid;
+	}
+
+	.info{
+		grid-area: info;
+		margin-top: 10px;
+		padding-left: 20px;
+	}
+
+	.openingstijden{
+		background-color: white;
+		color: black;
+	}
+
+	iframe{
+		height: 370px;
+		width: 250px;
+	}
+
+	footer{
+		display: grid;
+		grid-template-areas: 'links social';
+		background-color: rgb(141,125,31);
+
+	}
+
+	.footernav{
+		grid-area: links;
+		padding-left: 20px; 
+		padding-top: 10px;
+		
+	}
+
+	.footernav li{
+		color: white;
+	}
+
+	.desksocial{
+		grid-area: social;
+		color: white;
+		display: block;
+		font-size: 40px;
+		justify-self: center;
+		align-self: center;
+	}
+
+	.footernav .social{
+		display: none;
+	}
+
+	.footernav li{
+		border: none;
+		text-align: left;
+	}
+
+	.foot-links{
+		color: white;
+	}
+
+	.insta, .face{
+		padding: 10px;
+
+	}
+
+	.mainbody{
+		max-width: 1000px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	body{
+		background-image: linear-gradient(rgb(141,125,31), rgb(52,56,21) );
+	}
+
+	}
